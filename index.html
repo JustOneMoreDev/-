@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hide{
+            display: none;
+        }
+
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .5s;
+            height: 100px;
+            width: 200px;
+        }
+
+        main:hover{
+            transform: rotate(360deg);
+        }
+
+        main:hover > .hide0{
+            display: none;
+        }
+
+        main:hover > .hide{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="hide0">
+            <img src="1.gif" alt="">
+            Obrigado pelo curso
+        </div>
+        <div class="hide">
+            <img src="2.png" alt="">
+            já me sinto um profissional kkkkkk
+        </div>
+    </main>
+</body>
+</html>
