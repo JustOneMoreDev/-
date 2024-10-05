@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obrigado</title>
     <style>
-        body{
+        body {
             height: 100vh;
             display: flex;
             align-items: center;
@@ -13,11 +14,15 @@
             text-align: center;
         }
 
-        .hide{
+        .hide {
             display: none;
         }
 
-        main{
+        input{
+            display: none;
+        }
+
+        main {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -26,29 +31,36 @@
             width: 200px;
         }
 
-        main:hover{
+        main:has(input:checked) {
             transform: rotate(360deg);
         }
 
-        main:hover > .hide0{
+        main:has(input:checked) .hide0 {
             display: none;
         }
 
-        main:hover > .hide{
+        main:has(input:checked) .hide {
             display: block;
         }
     </style>
 </head>
+
 <body>
     <main>
-        <div class="hide0">
-            <img src="1.gif" alt="">
-            Obrigado pelo curso
-        </div>
-        <div class="hide">
-            <img style="max-width: 80vw;" src="2.png" alt="">
-            já me sinto um profissional kkkkkk
-        </div>
+        <label>
+            <input type="checkbox">
+            <div class="hide0">
+                <img src="1.gif" alt="">
+                Obrigado pelo curso
+            </div>
+            <div class="hide">
+                <img style="max-width: 70vw;" src="2.png" alt="">
+                já me sinto um profissional kkkkkk
+            </div>
+        </label>
+
+
     </main>
 </body>
+
 </html>
